@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(
           animatedTextExample.label,
-          style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
         ),
       ),
       body: Column(
@@ -108,10 +108,10 @@ List<AnimatedTextExample> animatedTextExamples({VoidCallback? onTap}) =>
         color: Colors.orange[800],
         child: ListView(
           scrollDirection: Axis.horizontal,
-          children: <Widget>[
+          children:[
             Row(
               mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
+              children: [
                 const SizedBox(
                   width: 20.0,
                   height: 100.0,
@@ -125,7 +125,7 @@ List<AnimatedTextExample> animatedTextExamples({VoidCallback? onTap}) =>
                   height: 100.0,
                 ),
                 DefaultTextStyle(
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 40.0,
                     fontFamily: 'Horizon',
                   ),
