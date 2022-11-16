@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ui_text_animation/main.dart';
 
 import 'home_page.dart';
 import 'my_home_page.dart';
